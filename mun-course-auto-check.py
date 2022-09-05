@@ -133,7 +133,7 @@ def check():
                 )
                 course.details = course_details
 
-                if db[course_id] is not None:
+                if db.get(course_id) is not None:
                     course_from_db: Course = db[course_id]
                     if course_details_different(course_details, course_from_db.details):
                         alert_course_details_different(
