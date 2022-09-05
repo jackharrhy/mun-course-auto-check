@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["Jack Arthur Harrhy <me@jackharrhy.com>"]
+description = "Automatically check the availability of slots for a given MUN course, via web-scraping"
+name = "mun-course-auto-check"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+playwright = "^1.25.2"
+pydantic = "^1.10.1"
+python = "^3.10"
+toml = "^0.10.2"
+schedule = "^1.1.0"
+twilio = "^7.13.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
