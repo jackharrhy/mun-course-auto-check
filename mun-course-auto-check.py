@@ -1,5 +1,6 @@
 import shelve
 import time
+import sys
 from typing import List, Optional
 from pathlib import Path
 
@@ -150,11 +151,18 @@ def check():
     print("Finished checking")
 
 
-schedule.every(10).minutes.do(check)
+def safe_check():
+    try:
+        check()
+    except Exception as e:
+        print(f"Exception: {e}", file=sys.stderr)
+
+
+schedule.every(10).minutes.do(safe_check)
 
 print("MUN Course Auto Check running")
 print("Running for the first time...")
-check()
+safe_check()
 print("Scheduled to run every 10 minutes")
 
 while True:
