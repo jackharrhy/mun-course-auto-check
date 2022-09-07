@@ -13,12 +13,12 @@ account_sid = "" # twillio account sid
 auth_token = "" # twillio auth_token
 number_to_text = "" # number to text
 
-[[course]]
+[[courses]]
 crn = "" # enter course crn here, like 123456
 number = "" # enter course number here, like 2001
 subject = "" # enter subject here, like COMP
 
-[[course]] # include as many of these as you want to check
+[[courses]] # include as many of these as you want to check
 crn = ""
 number = ""
 subject = ""
