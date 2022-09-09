@@ -8,17 +8,18 @@ username = "" # enter your mun username here
 term = "" # enter the term here, for example, for fall 2022, enter in "202201"
 
 [notification]
-[notification.twillio]
-account_sid = "" # twillio account sid
-auth_token = "" # twillio auth_token
-number_to_text = "" # number to text
+[notification.twilio]
+account_sid = "" # twilio account sid
+auth_token = "" # twilio auth_token
+number_to = "" # number to text format '+15017122661'
+number_from = "" # twilio phone 'From' number format '+15558675310'
 
-[[course]]
+[[courses]] # include as many of these as you want to check
 crn = "" # enter course crn here, like 123456
 number = "" # enter course number here, like 2001
 subject = "" # enter subject here, like COMP
 
-[[course]] # include as many of these as you want to check
+[[courses]]
 crn = ""
 number = ""
 subject = ""
