@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v3.1.1
         with:
           push: true
-          tags: ghcr.io/jackharrhy/mun-course-auto-check:latest
+          tags: ghcr.io/${{ github.actor }}/mun-course-auto-check:latest
