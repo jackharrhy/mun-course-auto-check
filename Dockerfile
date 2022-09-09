@@ -7,7 +7,6 @@ RUN apt-get install -y python3 python3-pip python3-gdbm
 RUN python3 -m pip install poetry==${POETRY_VERSION}
 
 WORKDIR /app
-COPY config.toml .
 COPY mun-course-auto-check.py .
 COPY pyproject.toml .
 COPY poetry.lock .
