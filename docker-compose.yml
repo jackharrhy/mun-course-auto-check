@@ -1,6 +1,0 @@
-version: '3'
-
-services:
-  mun-course-auto-check:
-    image: mun-course-check
-    build: .
