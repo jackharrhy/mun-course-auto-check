@@ -85,9 +85,9 @@ def get_course_details(
     ).element_handles():
         if elm.text_content() == crn:
             parent = elm.get_property("parentElement").as_element()
-            capacity = int(parent.query_selector("td:nth-child(11)").text_content())
-            actual = int(parent.query_selector("td:nth-child(12)").text_content())
-            remaining = int(parent.query_selector("td:nth-child(13)").text_content())
+            capacity = int(parent.query_selector("td:nth-child(12)").text_content())
+            actual = int(parent.query_selector("td:nth-child(13)").text_content())
+            remaining = int(parent.query_selector("td:nth-child(14)").text_content())
 
             return CourseDetails(capacity=capacity, actual=actual, remaining=remaining)
 
