@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  mun-course-check:
+    build: .
+    volumes:
+      - ./config.toml:/app/config.toml
